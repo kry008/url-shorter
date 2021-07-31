@@ -1,8 +1,6 @@
 {
-  "links": [
-    {
-      "url": "https://www.wp.pl",
-      "code": "2ef70c"
-    }
-  ]
+    "links": [{
+        "url": "https://www.wp.pl",
+        "code": "2ef70c"
+    }]
 }

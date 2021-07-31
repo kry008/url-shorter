@@ -3,9 +3,10 @@ import { Storage } from "./data/Storage.js";
 var adres_strony = "http://localhost/"
 
 export const cutURL = (req, res) => {
-    const urlRegex = /^(https?:\/\/)?[\d\w]+\.[\w]+(\/.*)*/;
+    const urlRegex = /^(https?:\/\/)?[\d\w]+\.[\w]+(\/.*)*/; //https
+    const urlRegex2 = /^(http?:\/\/)?[\d\w]+\.[\w]+(\/.*)*/; //http
 
-    if (req.body.url === undefined || !urlRegex.test(req.body.url))
+    if (req.body.url === undefined || !urlRegex.test(req.body.url) || !urlRegex2.test(req.body.url))
         return res.status(400).send("<img src=https://http.cat/400.jpg>")
 
     const code = "xxxxxx".replace(/x/g, () =>
