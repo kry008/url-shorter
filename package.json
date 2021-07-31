@@ -1,0 +1,17 @@
+{
+    "type": "module",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "name": "url",
+    "version": "1.0.0",
+    "main": "app.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "node app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
