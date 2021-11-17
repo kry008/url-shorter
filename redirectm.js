@@ -16,7 +16,6 @@ export const redirectm = (req, res) => {
     });
 
     if (!found) {
-        console.log("aaaa")
         res.status(404).send("<img src=https://http.cat/404.jpg>")
     }
 };
